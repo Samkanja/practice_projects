@@ -28,3 +28,7 @@ Rules:
 
 ## 5.Caeser Cipher
 A project of a program that let one encrypt and decrypt messeges. encrypting letters by shifting them over by a call the length of shift key and decrypting the messege, you must shift the encrpted letters in the opposite direction.
+
+
+## 6.Ceaser Hacker
+A program project that can hak messeges encrypted with the caesar cipher even without the key. we will be using brute-force attack.
