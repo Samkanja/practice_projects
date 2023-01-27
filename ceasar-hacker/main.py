@@ -2,20 +2,23 @@ import string
 
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def ceaser_hacker(key,msg):
-    translated = ''
+    
+    output =set()
+    for i in range(len(SYMBOLS)):
+        translated = ''
+        for char in msg:
+            if char in SYMBOLS:
+                num = SYMBOLS.find(char)
+                num = num - i
 
-    for char in msg:
-        if char in SYMBOLS:
-            num = SYMBOLS.find(char)
-            num = num - key
+                if num < 0:
+                    num  = num + len(SYMBOLS)
+                translated  = translated + SYMBOLS[num]
+            else:
+                translated =  translated + char
 
-            if num < 0:
-                num  = num + len(SYMBOLS)
-            translated  = translated + SYMBOLS[num]
-        else:
-            translated =  translated + char
-
-    return translated
+        output.add(translated)
+    return output
 
 
 msg = input('messege: ')
