@@ -38,3 +38,10 @@ This program generates printable text files of monthly calenders for the month a
 
 ## 8.Decimal number to Roman 
 This is a program that converts decimal numeric numbers to roman numbers
+
+## 9.Collatz Sequence
+The collatz sequence, also called 3n + 1 problem. 
+rules: 
+ - if number is even, the next number is number / 2
+ - if number is odd, the next number is n*3  + 1
+ - if number is 1, stop, otherwise repeat 
